@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,8 +25,12 @@ class MainActivity : AppCompatActivity() {
             count++
             if (count==16){
                 count=0
+                Toast.makeText(this@MainActivity, "Reached maximum value", Toast.LENGTH_SHORT).show()
+           }else{
+                Toast.makeText(this@MainActivity, "Value increased by one", Toast.LENGTH_SHORT).show()
             }
             counter.text=count.toString()
+
         }
     }
 }

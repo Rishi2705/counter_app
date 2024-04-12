@@ -7,7 +7,6 @@
     tools:context=".MainActivity"
     android:background="#CB003296"
     >
-
     <androidx.cardview.widget.CardView
         android:layout_width="350dp"
         android:layout_height="500dp"
@@ -31,11 +30,12 @@
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
                 android:text="Counter"
+                android:backgroundTint="#FF5722"
                 android:layout_marginTop="100dp"
                 android:textSize="40sp"
                 android:textColor="@color/white"
                 android:textAlignment="center"
-                android:backgroundTint="#D84409"/>
+                />
 
             <TextView
                 android:id="@+id/counter"
@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="76dp"
                 android:text="0"
-                android:textSize="40dp"
+                android:textSize="40sp"
                 android:background="@color/white"
                 android:layout_gravity="center"
                 android:textColor="@color/black"
@@ -61,5 +61,4 @@
                  />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
